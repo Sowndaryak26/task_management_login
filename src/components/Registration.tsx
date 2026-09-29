@@ -105,7 +105,7 @@ export default function Registration({
               <img
               src={stacklyLogo}
               alt="YOUR COMPANY"
-              classname="h-16 w-auto object-contain"
+              className="h-16 w-auto object-contain"
               />
 
 

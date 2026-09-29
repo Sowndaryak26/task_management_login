@@ -1,4 +1,5 @@
 import { useState, type ReactNode } from "react";
+import stacklyLogo from "../assets/stackly_logo.png";
 
 type MenuItem =
   | "Profile"
@@ -56,9 +57,11 @@ export default function Dashboard() {
 
         {/* BRAND */}
         <div className="border-b border-slate-800 px-6 py-5">
-          <h1 className="text-2xl font-bold text-white">
-            The Stackly
-          </h1>
+          <img
+              src={stacklyLogo}
+              alt="The Stackly"
+              className="h-16 w-auto object-contain"
+              />
 
           <p className="mt-1 text-sm text-slate-400">
             Accounts
