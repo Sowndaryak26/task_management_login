@@ -165,7 +165,7 @@ const RightVisualPanel = () => {
                   </span>
 
                   <span className="mt-1 text-3xl font-bold text-white">
-                    42%
+                    75%
                   </span>
 
                 </div>

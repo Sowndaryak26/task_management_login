@@ -1,5 +1,6 @@
 import { useState, type FormEvent } from "react";
 import RightVisualPanel from "./RightVisualPanel";
+import stacklyLogo from "../assets/stackly_logo.png";
 
 type RegistrationProps = {
   onSuccess: () => void;
@@ -101,9 +102,12 @@ export default function Registration({
           <div className="w-full max-w-md rounded-2xl border border-slate-800 bg-slate-900 p-8 shadow-2xl">
 
             <div className="mb-8">
-              <h2 className="text-3xl font-bold text-white">
-                YOUR COMPANY
-              </h2>
+              <img
+              src={stacklyLogo}
+              alt="YOUR COMPANY"
+              classname="h-16 w-auto object-contain"
+              />
+
 
               <p className="mt-1 text-sm text-slate-400">
                 Task Management
