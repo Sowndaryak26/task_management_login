@@ -1,4 +1,5 @@
 import { useState, type FormEvent } from "react";
+import RightVisualPanel from "./RightVisualPanel";
 
 type LoginProps = {
   onSuccess: () => void;
@@ -76,39 +77,29 @@ export default function Login({
   };
 
   return (
-    <div className="min-h-screen bg-slate-950 flex items-center justify-center p-6">
+    <div className="min-h-screen bg-slate-950 text-white">
 
-      <div className="w-full max-w-6xl grid grid-cols-1 lg:grid-cols-2">
+      <div className="min-h-screen grid grid-cols-1 lg:grid-cols-2">
 
-        {/* LEFT SECTION */}
-        <div className="flex flex-col justify-center px-8 py-12 lg:px-16">
-
-          <div className="mb-12">
-            <h2 className="text-3xl font-bold text-white">
-              THE STACKLY
-            </h2>
-
-            <p className="mt-1 text-sm text-slate-400">
-              Task Management
-            </p>
-          </div>
-
-          <h1 className="text-4xl font-bold leading-tight text-white lg:text-5xl">
-            Manage your tasks
-            <br />
-            smarter
-          </h1>
-
-          <p className="mt-6 max-w-lg text-lg leading-8 text-slate-300">
-            Organize your work, collaborate with your team,
-            and manage your tasks efficiently from one place.
-          </p>
+        {/* LEFT SIDE - ANALYTICS */}
+        <div className="hidden lg:block">
+          <RightVisualPanel />
         </div>
 
-        {/* RIGHT SECTION */}
+        {/* RIGHT SIDE - LOGIN */}
         <div className="flex items-center justify-center px-6 py-10 lg:px-12">
 
           <div className="w-full max-w-md rounded-2xl border border-slate-800 bg-slate-900 p-8 shadow-2xl">
+
+            <div className="mb-8">
+              <h2 className="text-3xl font-bold text-white">
+                THE STACKLY
+              </h2>
+
+              <p className="mt-1 text-sm text-slate-400">
+                Task Management
+              </p>
+            </div>
 
             <h2 className="text-3xl font-bold text-white">
               Welcome Back
